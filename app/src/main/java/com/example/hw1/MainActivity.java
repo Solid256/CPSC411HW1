@@ -2,16 +2,11 @@ package com.example.hw1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.shapes.RectShape;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.View;
 import android.widget.GridLayout;
-import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -62,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         TableRow.LayoutParams lpRow1 = new TableRow.LayoutParams(
                 TableRow.LayoutParams.WRAP_CONTENT,
                 TableRow.LayoutParams.WRAP_CONTENT);
-        lpRow1.gravity = 1;
+        lpRow1.weight = 1;
         lpRow1.setMargins(4,4,4,4);
 
         tableLayout.setStretchAllColumns(true);
@@ -84,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         text1.setText("Rules void hello1(int hour)");
         text1.setTextColor(Color.WHITE);
         text1.setBackgroundColor(Color.BLACK);
+        text1.setTextSize(10.0f);
         text1.setGravity(Gravity.CENTER);
 
         tableRow1.addView(text1);
@@ -502,6 +498,7 @@ public class MainActivity extends AppCompatActivity {
         cell.setBackgroundColor(Color.parseColor(colorStr));
         cell.setPadding(paddingH, paddingV, paddingH, paddingV);
         cell.setLayoutParams(lp);
+        cell.setTextSize(10.0f);
 
         // Set the text to bold if needed.
         if(bold)
