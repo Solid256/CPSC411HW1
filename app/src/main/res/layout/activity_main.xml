@@ -29,7 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Rules void hello1(int hour)"
+                    android:text="@string/title"
                     android:background="@color/colorBlack"
                     android:textColor="@color/colorWhite"
                     android:layout_gravity="center_horizontal"
@@ -60,7 +60,7 @@
                         android:paddingStart="16dp"
                         android:paddingLeft="16dp"
                         android:paddingEnd="16dp"
-                        android:text="properties"
+                        android:text="@string/cell_title_1"
                         android:textColor="@color/colorBlack"
                         android:textAlignment="center"
                         android:background="@color/colorWhite">
@@ -82,7 +82,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="name"
+                        android:text="@string/cell_title_2_1"
                         android:textColor="@color/colorBlack"
                         android:textAlignment="center"
                         android:background="@color/colorWhite">
@@ -96,7 +96,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="category"
+                        android:text="@string/cell_title_2_2"
                         android:textColor="@color/colorBlack"
                         android:textAlignment="center"
                         android:background="@color/colorWhite">
@@ -118,7 +118,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="Day Hour Classification"
+                        android:text="@string/cell_title_3_1"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite">
 
@@ -131,7 +131,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="Day and Time"
+                        android:text="@string/cell_title_3_2"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite">
                     </android.widget.TextView>
@@ -151,7 +151,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="Rule"
+                        android:text="@string/cell_2_1"
                         android:textStyle="bold"
                         android:textColor="@color/colorBlack"
                         android:textAlignment="center"
@@ -173,7 +173,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="C1"
+                        android:text="@string/cell_2_2"
                         android:textStyle="bold"
                         android:textColor="@color/colorBlack"
                         android:textAlignment="center"
@@ -196,7 +196,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="A1"
+                        android:text="@string/cell_2_3"
                         android:textStyle="bold"
                         android:textColor="@color/colorBlack"
                         android:textAlignment="center"
@@ -252,7 +252,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="min &lt;= hour &amp;&amp; hour &lt;= max"
+                        android:text="@string/cell_3_2_1"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorBlue">
                     </android.widget.TextView>
@@ -275,7 +275,7 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="int min"
+                            android:text="@string/cell_3_2_2"
                             android:textAlignment="center"
                             android:textColor="@color/colorBlack"
                             android:background="@color/colorBlue">
@@ -290,7 +290,7 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="int max"
+                            android:text="@string/cell_3_2_3"
                             android:textAlignment="center"
                             android:textColor="@color/colorBlack"
                             android:background="@color/colorBlue">
@@ -312,7 +312,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="System.out.println(greeting + &quot;,World&quot;)"
+                        android:text="@string/cell_3_3_1"
                         android:textAlignment="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorBlue">
@@ -325,7 +325,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="int max"
+                        android:text="@string/cell_3_3_2"
                         android:textAlignment="center"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorBlue">
@@ -346,7 +346,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="Rule"
+                        android:text="@string/cell_4_1"
                         android:textColor="@color/colorBlack"
                         android:textStyle="bold"
                         android:background="@color/colorWhite">
@@ -378,7 +378,7 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="From"
+                            android:text="@string/cell_4_2_1"
                             android:textColor="@color/colorBlack"
                             android:textStyle="bold"
                             android:textAlignment="textStart"
@@ -395,7 +395,7 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="To"
+                            android:text="@string/cell_4_2_2"
                             android:textColor="@color/colorBlack"
                             android:textStyle="bold"
                             android:textAlignment="textStart"
@@ -418,7 +418,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="Greeting"
+                        android:text="@string/cell_4_3"
                         android:textColor="@color/colorBlack"
                         android:textStyle="bold"
                         android:background="@color/colorOrange">
@@ -439,7 +439,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="R10"
+                        android:text="@string/cell_5_1_1"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite">
                     </android.widget.TextView>
@@ -451,7 +451,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="R20"
+                        android:text="@string/cell_5_1_2"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite">
                     </android.widget.TextView>
@@ -463,7 +463,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="R30"
+                        android:text="@string/cell_5_1_3"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite">
                     </android.widget.TextView>
@@ -475,7 +475,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="R40"
+                        android:text="@string/cell_5_1_4"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorWhite">
                     </android.widget.TextView>
@@ -505,7 +505,7 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="0"
+                            android:text="@string/cell_5_2_1"
                             android:textColor="@color/colorBlack"
                             android:textAlignment="textEnd"
                             android:background="@color/colorYellow">
@@ -521,7 +521,7 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="11"
+                            android:text="@string/cell_5_2_2"
                             android:textColor="@color/colorBlack"
                             android:background="@color/colorYellow">
                         </android.widget.TextView>
@@ -544,7 +544,7 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="12"
+                            android:text="@string/cell_5_2_3"
                             android:textColor="@color/colorBlack"
                             android:background="@color/colorYellow">
                         </android.widget.TextView>
@@ -559,45 +559,7 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="17"
-                            android:textColor="@color/colorBlack"
-                            android:background="@color/colorYellow">
-                        </android.widget.TextView>
-                    </android.widget.LinearLayout>
-
-                    <android.widget.LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="0dp"
-                        android:orientation="horizontal"
-                        android:layout_gravity="fill_horizontal">
-
-                        <android.widget.TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="1dp"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_weight="1"
-                            android:gravity="end"
-                            android:paddingStart="3dp"
-                            android:paddingLeft="3dp"
-                            android:paddingRight="3dp"
-                            android:text="18"
-                            android:textColor="@color/colorBlack"
-                            android:background="@color/colorYellow">
-                        </android.widget.TextView>
-
-                        <android.widget.TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="1dp"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_weight="1"
-                            android:gravity="end"
-                            android:paddingStart="3dp"
-                            android:paddingLeft="3dp"
-                            android:paddingRight="3dp"
-                            android:text="21"
+                            android:text="@string/cell_5_2_4"
                             android:textColor="@color/colorBlack"
                             android:background="@color/colorYellow">
                         </android.widget.TextView>
@@ -620,7 +582,7 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="22"
+                            android:text="@string/cell_5_2_5"
                             android:textColor="@color/colorBlack"
                             android:background="@color/colorYellow">
                         </android.widget.TextView>
@@ -635,7 +597,45 @@
                             android:paddingStart="3dp"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="23"
+                            android:text="@string/cell_5_2_6"
+                            android:textColor="@color/colorBlack"
+                            android:background="@color/colorYellow">
+                        </android.widget.TextView>
+                    </android.widget.LinearLayout>
+
+                    <android.widget.LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="fill_horizontal">
+
+                        <android.widget.TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:paddingStart="3dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:text="@string/cell_5_2_7"
+                            android:textColor="@color/colorBlack"
+                            android:background="@color/colorYellow">
+                        </android.widget.TextView>
+
+                        <android.widget.TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:paddingStart="3dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:text="@string/cell_5_2_8"
                             android:textColor="@color/colorBlack"
                             android:background="@color/colorYellow">
                         </android.widget.TextView>
@@ -656,7 +656,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="Good Morning"
+                        android:text="@string/cell_5_3_1"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorOrange">
                     </android.widget.TextView>
@@ -668,7 +668,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="Good Afternoon"
+                        android:text="@string/cell_5_3_2"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorOrange">
                     </android.widget.TextView>
@@ -680,7 +680,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="Good Evening"
+                        android:text="@string/cell_5_3_3"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorOrange">
                     </android.widget.TextView>
@@ -692,7 +692,7 @@
                         android:paddingStart="3dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="3dp"
-                        android:text="Good Night"
+                        android:text="@string/cell_5_3_4"
                         android:textColor="@color/colorBlack"
                         android:background="@color/colorOrange">
                     </android.widget.TextView>

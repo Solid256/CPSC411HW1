@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">HW1</string>
+    <string name="title">Rules void hello1(int hour)</string>
+    <string name="cell_title_1">properties</string>
+    <string name="cell_title_2_1">name</string>
+    <string name="cell_title_2_2">category</string>
+    <string name="cell_title_3_1">Day Hour Classification</string>
+    <string name="cell_title_3_2">Day and Time</string>
+    <string name="cell_2_1">Rule</string>
+    <string name="cell_2_2">C1</string>
+    <string name="cell_2_3">A1</string>
+    <string name="cell_3_2_1">min &lt;= hour &amp;&amp; hour &lt;= max</string>
+    <string name="cell_3_2_2">int min</string>
+    <string name="cell_3_2_3">int max</string>
+    <string name="cell_3_3_1">System.out.println(greeting + &quot;,World&quot;)</string>
+    <string name="cell_3_3_2">int max</string>
+    <string name="cell_4_1">Rule</string>
+    <string name="cell_4_2_1">From</string>
+    <string name="cell_4_2_2">To</string>
+    <string name="cell_4_3">Greeting</string>
+    <string name="cell_5_1_1">R10</string>
+    <string name="cell_5_1_2">R20</string>
+    <string name="cell_5_1_3">R30</string>
+    <string name="cell_5_1_4">R40</string>
+    <string name="cell_5_2_1">0</string>
+    <string name="cell_5_2_2">11</string>
+    <string name="cell_5_2_3">12</string>
+    <string name="cell_5_2_4">17</string>
+    <string name="cell_5_2_5">18</string>
+    <string name="cell_5_2_6">21</string>
+    <string name="cell_5_2_7">22</string>
+    <string name="cell_5_2_8">23</string>
+    <string name="cell_5_3_1">Good Morning</string>
+    <string name="cell_5_3_2">Good Afternoon</string>
+    <string name="cell_5_3_3">Good Evening</string>
+    <string name="cell_5_3_4">Good Night</string>
+
 </resources>
