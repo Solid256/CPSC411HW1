@@ -6,40 +6,75 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
+import android.view.LayoutInflater;
 import android.widget.GridLayout;
+import android.widget.HorizontalScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
+import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        tablesContainer = new LinearLayout(this);
 
         CreateMainLayout();
         CreateTable();
+
+        // Add the xml version of the table to the main layout.
+
+        // The inflater used to convert the XML tree to a View.
+        LayoutInflater layoutInflater = (LayoutInflater)getSystemService(LAYOUT_INFLATER_SERVICE);
+
+        // The View version of the table.
+        View XMLLayout = layoutInflater.inflate(R.layout.activity_main, null, false);
+
+        // The linear layout for the XML version of the table.
+        LinearLayout tableFromXML = XMLLayout.findViewById(R.id.mainXMLLinearLayout);
+
+        // Remove the parent view.
+        ((ViewGroup)tableFromXML.getParent()).removeViewAt(0);
+
+        tablesContainer.addView(tableFromXML);
+
+        setContentView(mainLayout);
     }
 
     // Creates the main layout for the entire table.
     private void CreateMainLayout()
     {
-        // Create the main layout.
-        mainLayout = new LinearLayout(this);
+        // Create the main layout. It is horizontally scrollable to allow the user to
+        // see the whole graph.
+        mainLayout = new HorizontalScrollView(this);
 
-        // The layout params for the main table.
-        LayoutParams lpMain = new LayoutParams(
-                LayoutParams.WRAP_CONTENT,
-                LayoutParams.MATCH_PARENT);
+        // The layout parameters for the horizontal layout.
+        HorizontalScrollView.LayoutParams scrollViewLayoutParams =
+                new HorizontalScrollView.LayoutParams(
+                        HorizontalScrollView.LayoutParams.WRAP_CONTENT,
+                        HorizontalScrollView.LayoutParams.WRAP_CONTENT);
 
-        mainLayout.setOrientation(LinearLayout.VERTICAL);
-        mainLayout.setLayoutParams(lpMain);
-        mainLayout.setBackgroundColor(Color.GRAY);
+        mainLayout.setLayoutParams(scrollViewLayoutParams);
+        mainLayout.setBackgroundColor(Color.BLACK);
 
-        setContentView(mainLayout, lpMain);
+
+        // Add the tables container to the horizontal scroll view.
+
+        // The layout for the tables container.
+        LinearLayout.LayoutParams lpTablesContainer = new LinearLayout.LayoutParams(
+                LayoutParams.MATCH_PARENT,
+                LayoutParams.WRAP_CONTENT);
+
+        tablesContainer.setOrientation(LinearLayout.VERTICAL);
+        tablesContainer.setLayoutParams(lpTablesContainer);
+
+        mainLayout.addView(tablesContainer);
     }
 
     // Creates the main table. It has two rows, one for the header, and another for the grid.
@@ -79,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         text1.setText("Rules void hello1(int hour)");
         text1.setTextColor(Color.WHITE);
         text1.setBackgroundColor(Color.BLACK);
-        text1.setTextSize(10.0f);
+        text1.setTextSize(14.0f);
         text1.setGravity(Gravity.CENTER);
 
         tableRow1.addView(text1);
@@ -89,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         CreateRow2();
 
         // Add the table to the main layout.
-        mainLayout.addView(tableLayout, lpTable);
+        tablesContainer.addView(tableLayout, lpTable);
     }
 
     // Creates the second row of the table, which is a grid layout of all the text values.
@@ -323,7 +358,7 @@ public class MainActivity extends AppCompatActivity {
         // Grid cell (2, 2)
         CurColumn = columns[2][2];
 
-        CurColumn.addView(CreateCell("System.out.println(greeting + \",World!\"", ColorBlueStr,
+        CurColumn.addView(CreateCell("System.out.println(greeting + \",World!\")", ColorBlueStr,
                 false, textBoxPaddingH, textBoxPaddingV,
                 Gravity.CENTER, lpColumnCenter));
 
@@ -498,7 +533,7 @@ public class MainActivity extends AppCompatActivity {
         cell.setBackgroundColor(Color.parseColor(colorStr));
         cell.setPadding(paddingH, paddingV, paddingH, paddingV);
         cell.setLayoutParams(lp);
-        cell.setTextSize(10.0f);
+        cell.setTextSize(14.0f);
 
         // Set the text to bold if needed.
         if(bold)
@@ -511,9 +546,12 @@ public class MainActivity extends AppCompatActivity {
 
     // Variables:
 
-    // The table being displayed.
+    // The table being displayed. Made in Java.
     private TableLayout tableLayout;
 
-    // The main layout of the app (hard coded).
-    private LinearLayout mainLayout;
+    // The main layout of the app. Allows horizontal scrolling.
+    private HorizontalScrollView mainLayout;
+
+    // The container for both tables. Stored in the horizontal scroll view.
+    private LinearLayout tablesContainer;
 }
